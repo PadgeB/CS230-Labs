@@ -1,0 +1,199 @@
+body{
+    background-color:	#696969;
+   
+}
+
+.container{
+    
+    height:1000px;
+    width: 1000px;
+    margin: -175px 450px;
+}
+
+.text{
+    float: left;
+    font-family:Orbitron ;
+    color:white;
+    padding: 0%;
+    font-size: 30px;
+    text-align: center;
+    margin-left:70px;
+    margin-top:-350px;
+}
+
+.text2{
+  float: left;
+  font-family:Orbitron ;
+  color:white;
+  padding: 0%;
+  font-size: 15px;
+  text-align: center;
+  margin-left:85px;
+  margin-top:-235px;
+}
+
+.text3{
+  float: left;
+  font-family:Orbitron ;
+  color:white;
+  padding: 0%;
+  font-size: 15px;
+  text-align: center;
+  margin-left:350px;
+  margin-top:-235px;
+}
+
+#circleTopLeft {
+float: left;
+  margin: -800px 200px;
+  width: 200px;
+  height: 200px;
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 5px solid black;
+  background: darkred;
+  border-radius: 50%
+  
+  
+}
+
+
+#circleTopRight {
+    float: left;
+    margin: -800px 600px;
+  width: 200px;
+  height: 200px;
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+  background: darkgreen;
+  border-radius: 50%
+}
+
+
+#circleBottomLeft {
+    float: left;
+    margin: -400px 200px;
+  width: 200px;
+  height: 200px;
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+  background:#4169E1;
+  border-radius: 50%
+}
+
+
+#circleBottomRight {
+    float: left;
+    margin: -400px 600px;
+  width: 200px;
+  height: 200px;
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+  background:#666600;
+  border-radius: 50%
+}
+
+#circleMain {
+    float: left;
+    margin:250px 250px;
+  width: 500px;
+  height: 500px;
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  border-right: 8px solid black;
+  background:linear-gradient(#282828,#181818);
+  border-radius: 50%
+  
+
+}
+
+#circlePowerLight {
+    float: left;
+    margin:-400px 500px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background:red;
+  border-radius: 50%
+  
+
+}
+
+
+#StartB {
+
+background-color: grey;
+border: none;
+color: white;
+padding: 20px;
+font-family:Orbitron;
+text-align: center;
+text-decoration: none;
+border-bottom: 5px solid white;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+font-size: 16px;
+float: left;
+margin: 235px -80px;
+border-radius: 12px;
+}
+
+#StartB:hover{
+
+border-bottom: 5px solid #00ff00;
+  border-top: 5px solid #00ff00;
+  border-left: 5px solid #00ff00;
+  border-right: 5px solid #00ff00; 
+  color: #00ff00;
+}
+
+#number {
+background-color: grey;
+float:left;
+text-align:center;
+vertical-align: middle;
+font-family:Orbitron;
+color: white;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+border-left: 2px solid white;
+border-right: 2px solid white;
+
+margin: 240px 100px;
+width: 80px;
+height: 60px;
+font-size: 40px;
+border-radius: 12px;
+
+}
+#number1 {
+background-color: grey;
+    float:left;
+text-align:center;
+vertical-align: middle;
+font-family:Orbitron;
+color: white;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+border-left: 2px solid white;
+border-right: 2px solid white;
+
+margin:-306px 335px;
+width: 80px;
+height: 60px;
+font-size: 40px;
+border-radius: 12px;
+}
+

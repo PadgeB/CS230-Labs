@@ -1,0 +1,28 @@
+#grades{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+#grades td,#grades th{
+    border:1px solid #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+#grades th{
+    background-color: #b0e0e6;
+    text-align: center;
+} 
+
+
+#grades tr:nth-child(even){
+    background-color: #B0B0B0;
+    
+}
+
+#switch:hover{
+    background-color: aqua;
+}
+

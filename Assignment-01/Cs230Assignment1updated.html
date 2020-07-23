@@ -1,0 +1,401 @@
+
+<style>
+body {
+
+	background-color: #EFEFEF;
+}
+.shape {
+	position: relative;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+  align-items: middle;
+
+}
+.onetop {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 80px solid red;
+}
+.onetop:hover {
+	border-bottom: 80px solid #CD5C5C;
+}
+
+.one {
+	width: 150;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 60px solid red;
+}
+.one:hover {
+	border-bottom: 60px solid #CD5C5C;
+}
+.onegap {
+	border-bottom: 15px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 250px;
+}
+.onegap:hover {
+	border-bottom: 15px solid transparent;
+}
+.two{
+	border-bottom: 75px solid#FF8C00;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	height: 0;
+	width: 270px;
+}
+.two:hover {
+	border-bottom: 75px solid #E9967A;
+}
+.twogap {
+	border-bottom: 15px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 390px;
+}
+.twogap:hover {
+	border-bottom: 15px solid transparent;
+}
+.three {
+	border-bottom: 100px solid #FFFF00;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 410px;
+}
+.three:hover {
+	border-bottom: 100px solid #EEE8AA;
+}
+.four {
+	border-bottom: 125px solid #1E90FF;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height: 0;
+	width: 570px;
+}
+.four:hover {
+	border-bottom: 125px solid #00BFFF;
+}
+.five {
+	border-bottom: 150px solid #8B4513;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	height: 0;
+	width: 770px;
+}
+.five:hover {
+	border-bottom: 150px solid #F4A460;
+}
+.six {
+	border-bottom: 175px solid #32CD32;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	height: 0;
+	width: 1010px;
+
+}
+.six:hover {
+	border-bottom: 175px solid #66CDAA;
+}
+
+body {
+            font: 15px/15px Arial, sans-serif;
+        }
+
+.numberCircle {
+		display: inline-block;
+		border-radius: 50%;
+		border: 1px solid;
+		font-size: 15px;
+		background-color: white;
+		user-select: none;
+}
+
+
+
+.numberCircle:before,
+.numberCircle:after {
+		content: '\200B';
+		display: inline-block;
+		line-height: 10px;
+		padding-top: 35%;
+		padding-bottom: 35%;
+}
+
+.numberCircle::before {
+		padding-left: 0.35em;
+}
+
+.numberCircle::after {
+		padding-right: 0.35em;
+}
+
+.numberCircle:hover {
+		background-color: yellow;
+}
+
+
+
+form #input-wrap {
+	margin: 0px;
+	padding: 0px;
+}
+
+input#number {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+input#number2 {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+input#number3 {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+input#number4 {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+input#number5 {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+input#number6 {
+	text-align: center;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 10px;
+	width: 50px;
+	height: 40px;
+}
+
+
+    p {
+        text-align: center;
+    }
+
+
+</style>
+<script>
+
+	function click6plus() {
+		var value = parseInt(document.getElementById('number6').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number6').value = value;
+	}
+
+	function click6minus() {
+		var value = parseInt(document.getElementById('number6').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number6').value = value;
+	}
+
+	function click5plus() {
+		var value = parseInt(document.getElementById('number5').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number5').value = value;
+	}
+
+	function click5minus() {
+		var value = parseInt(document.getElementById('number5').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number5').value = value;
+	}
+
+	function click4plus() {
+		var value = parseInt(document.getElementById('number4').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number4').value = value;
+	}
+
+	function click4minus() {
+		var value = parseInt(document.getElementById('number4').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number4').value = value;
+	}
+
+	function click3plus() {
+		var value = parseInt(document.getElementById('number3').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number3').value = value;
+	}
+
+	function click3minus() {
+		var value = parseInt(document.getElementById('number3').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number3').value = value;
+	}
+
+	function click2plus() {
+		var value = parseInt(document.getElementById('number2').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number2').value = value;
+	}
+
+	function click2minus() {
+		var value = parseInt(document.getElementById('number2').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number2').value = value;
+	}
+
+	function click1plus() {
+		var value = parseInt(document.getElementById('number').value);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number').value = value;
+	}
+
+	function click1minus() {
+		var value = parseInt(document.getElementById('number').value);
+		value = isNaN(value) ? 0 : value;
+		value < 1 ? value = 1 : '';
+		value--;
+		document.getElementById('number').value = value;
+	}
+
+	
+
+
+	</script>
+
+<html>
+<body>
+	
+	<p id="date"> </p>
+
+<div class = "shape onetop"></div>
+
+	 <div class="shape one">
+		 <div>
+				 <button onclick="click1minus();" id="circle1minus" class="numberCircle tabular">-</button>
+					<input type="number" id="number" value="0" />
+				 <button onclick="click1plus();" id="circle1plus" class="numberCircle tabular">+</button>
+		 </div>
+	 </div>
+
+   <div class="shape onegap"></div>
+
+	 <div class="shape two">
+		 <div>
+				 <button onclick="click2minus();" id="circle2minus" class="numberCircle tabular">-</button>
+					<input type="number" id="number2" value="0" />
+				 <button onclick="click2plus();" id="circle2plus" class="numberCircle tabular">+</button>
+		 </div>
+	 </div>
+
+   <div class="shape twogap"></div>
+
+
+   <div class="shape three">
+		 <div>
+				 <button onclick="click3minus();" id="circle3minus" class="numberCircle tabular">-</button>
+					<input type="number" id="number3" value="0" />
+				 <button onclick="click3plus();" id="circle3plus" class="numberCircle tabular">+</button>
+		 </div>
+   </div>
+
+
+   <div class="shape four">
+		 <div>
+				 <button onclick="click4minus();" id="circle4minus" class="numberCircle tabular">-</button>
+					<input type="number" id="number4" value="0" />
+				 <button onclick="click4plus();" id="circle4plus" class="numberCircle tabular">+</button>
+		 </div>
+   </div>
+
+
+   <div class="shape five">
+		 <div>
+				 <button onclick="click5minus();" id="circle5minus" class="numberCircle tabular">-</button>
+					<input type="number" id="number5" value="0" />
+				 <button onclick="click5plus();" id="circle5plus" class="numberCircle tabular">+</button>
+		 </div>
+   </div>
+
+
+   <div class="shape six">
+		 <div>
+				 <button  class="numberCircle tabular" onclick="click6minus();" id="circle6minus">-</button>
+				<input type="number" id="number6" value="0" />
+				 <button class="numberCircle tabular" onclick="click6plus();" id="circle6plus">+</button>
+		 </div>
+	 </div>
+
+</body>
+
+</html>
+
+<script>
+
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = " Today's date is:" +d + "/" + m + "/" + y;
+        </script>

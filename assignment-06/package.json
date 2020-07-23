@@ -1,0 +1,24 @@
+{
+  "name": "assignment-06-17473946",
+  "version": "1.0.0",
+  "description": "phoneShop app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ExpressJs",
+    "RESTful",
+    "API",
+    "MongoDB",
+    "phoneShop"
+  ],
+  "author": "Patrick Brennan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  }
+}
